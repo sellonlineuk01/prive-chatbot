@@ -33,3 +33,5 @@ Do not diagnose. Always recommend seeing a clinician when necessary.
     res.status(500).json({ error: error.message });
   }
 }
+console.log("Received request:", req.body);
+console.log("Using API Key:", process.env.OPENAI_API_KEY ? "Yes" : "No");
